@@ -33,7 +33,7 @@ IP info: IpInfo { ip: 10.0.0.49, subnet: Subnet { gateway: 10.0.0.1, mask: Mask(
 
 For future builds, run: `deploy.sh <ip>`
 
-*Deplay will not exit, but it will be obvious when done.  Just ctrl-c. Ex:*
+*Deploy will not exit, but it will be obvious when done.  Just ctrl-c. Ex:*
 ```
 * We are completely uploaded and fine
 < HTTP/1.1 200 OK
