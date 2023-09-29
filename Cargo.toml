@@ -1,5 +1,5 @@
 [package]
-name = "rust-blink-182"
+name = "rust-esp32-hello-ota"
 version = "0.1.0"
 authors = ["Derek Anderson <public@kered.org>"]
 edition = "2021"

@@ -26,8 +26,17 @@ Build and deploy over serial once:
 cargo espflash flash -p /dev/ttyUSB0
 espflash monitor
 ```
-Note the IP in the serial logs.
+Note the IP in the serial logs.  Ex:
+```
+IP info: IpInfo { ip: 10.0.0.49, subnet: Subnet { gateway: 10.0.0.1, mask: Mask(24) }, dns: Some(75.75.75.75), secondary_dns: Some(75.75.76.76) }
+```
 
-For future builds, run: `deploy.sh <ip>` *Deplay will not exit, but it will be obvious when done.  Just ctrl-c.*
+For future builds, run: `deploy.sh <ip>`
+
+*Deplay will not exit, but it will be obvious when done.  Just ctrl-c. Ex:*
+```
+* We are completely uploaded and fine
+< HTTP/1.1 200 OK
+```
 
 To revert to the last build, run: `curl -X POST http://10.0.0.49/revert`
