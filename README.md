@@ -13,6 +13,7 @@ sudo snap install rustup --classic
 rustup install stable
 cargo install cargo-espflash
 cargo install espup
+cargo add esp32s2 # for esp32 s2 mini
 echo 'export PATH="$PATH:~/.cargo/bin"' >> ~/.bashrc
 source ~/.bashrc
 espup install
