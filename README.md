@@ -12,6 +12,8 @@ sudo apt install -y git curl gcc clang ninja-build cmake libudev-dev \
 sudo snap install rustup --classic
 rustup install stable
 cargo install espup
+echo 'export PATH="$PATH:~/.cargo/bin"' >> ~/.bashrc
+source ~/.bashrc
 espup install
 rustup toolchain link esp ~/.rustup/toolchains/esp
 . $HOME/export-esp.sh
