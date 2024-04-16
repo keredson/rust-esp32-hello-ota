@@ -11,6 +11,7 @@ sudo apt install -y git curl gcc clang ninja-build cmake libudev-dev \
                     libusb-1.0-0 libssl-dev pkg-config
 sudo snap install rustup --classic
 rustup install stable
+cargo install cargo-espflash
 cargo install espup
 echo 'export PATH="$PATH:~/.cargo/bin"' >> ~/.bashrc
 source ~/.bashrc
