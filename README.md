@@ -16,8 +16,25 @@ cargo install espup
 echo 'export PATH="$PATH:~/.cargo/bin"' >> ~/.bashrc
 source ~/.bashrc
 espup install
-rustup toolchain link esp ~/.rustup/toolchains/esp
 . $HOME/export-esp.sh
+```
+
+Project Init
+------------
+```
+cargo new <project-name>
+```
+
+Create `Cargo.toml`:
+```toml
+[package]
+name = "my_project"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
 ```
 
 Use
